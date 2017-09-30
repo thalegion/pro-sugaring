@@ -1,0 +1,26 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  margin-bottom: 10px;
+
+  font-family: $font--times;
+  font-size: 21px;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+
+  font-family: $font--times;
+  font-size: 21px;
+}
+
+.menu__item {
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

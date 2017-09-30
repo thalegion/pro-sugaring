@@ -1,0 +1,37 @@
+.socials {
+  font-size: 0;
+}
+
+.socials__item {
+  display: inline-block;
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.socials__link {
+  display: block;
+  width: 50px;
+  height: 50px;
+
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  &--google {
+    background-image: url("../img/gplus.png");
+  }
+
+  &--vkontakte {
+    background-image: url("../img/vk.png");
+  }
+
+  &--instagram {
+    background-image: url("../img/inst.png");
+  }
+
+  &--youtube {
+    background-image: url("../img/youtube.png");
+  }
+}

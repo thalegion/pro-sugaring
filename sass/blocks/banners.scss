@@ -1,0 +1,25 @@
+.banners {
+  padding: 115px 0;
+
+  background-color: #f5d9d2;
+}
+
+.banners__wrapper {
+  margin: 0 20px;
+}
+
+.banners__swiper {
+  padding: 0 42px;
+}
+
+.banners__prev {
+  left: 0;
+
+  background-image: url("../img/a_prev.png");
+}
+
+.banners__next {
+  right: 0;
+
+  background-image: url("../img/a_next.png");
+}

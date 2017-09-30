@@ -1,0 +1,158 @@
+.products__item {
+  //width: 100%;
+  padding: 0 67px;
+  margin-bottom: 10px;
+
+  font-family: $font--arial;
+  text-align: center;
+}
+
+.products__image {
+  margin: auto;
+  margin-bottom: 5px;
+
+  box-shadow: 0px 0px 10px 0px #fff;
+}
+
+.products__controls {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 5px;
+}
+
+.products__counter {
+  position: relative;
+
+  display: inline-block;
+
+  font-size: 25px;
+  line-height: 20px;
+  text-align: center;
+
+  &::before {
+    content: "+";
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    display: block;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+
+    border: 1px solid #f5b8aa;
+    cursor: pointer;
+  }
+
+  &::after {
+    content: "-";
+
+    position: absolute;
+    right: 0;
+    top: 19px;
+
+    display: block;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+
+    line-height: 16px;
+
+    border: 1px solid #f5b8aa;
+    cursor: pointer;
+  }
+}
+
+.products__input {
+  width: 60px;
+  height: 39px;
+  padding-right: 20px;
+
+  font-family: $font--arial;
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+
+  border: 1px solid #f5b8aa;
+  background-color: transparent;
+}
+
+.products__submit {
+  font-size: 17px;
+  line-height: 17px;
+
+  max-width: 145px;
+
+  background-color: #93dfb8;
+  cursor: pointer;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #85d0a9;
+  }
+}
+
+.products__title {
+  font-size: 17px;
+  line-height: 21px;
+}
+
+.products__price {
+  margin-bottom: 15px;
+
+  font-size: 25px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.products__more-link {
+  font-size: 21px;
+  line-height: 25px;
+
+  color: #f8ae9c;
+  text-decoration: underline;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #ae7365;
+  }
+}
+
+.products__swiper-pagination {
+  position: static;
+
+  counter-reset: pagination;
+}
+
+.products__swiper-pagination .swiper-pagination-bullet {
+  position: relative;
+
+  width: 30px;
+  height: 45px;
+
+  background-color: transparent;
+  background-image: url("../img/page_holder.png") !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &::before {
+    counter-increment: pagination;
+    content: counter(pagination);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 25px;
+    height: 45px;
+
+    font-family: $font--centrury-schoolbook;
+    font-size: 21px;
+    line-height: 45px;
+  }
+}

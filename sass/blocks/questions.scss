@@ -1,0 +1,54 @@
+.questions {
+  position: relative;
+
+  padding: 55px 35% 10px 80px;
+
+  font-family: $font--times;
+  text-align: center;
+
+  background-color: #d8e7ef;
+  background-image: url("../img/girl-bg2.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) bottom;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    display: block;
+    width: 290px;
+    height: 125px;
+
+    background-image: url("../img/flower2.png");
+    background-repeat: no-repeat;
+    background-position: top;
+
+    transform: translate(-50%, -35%);
+  }
+}
+
+.questions__wrapper {
+  margin: 0 20px;
+}
+
+.questions__title {
+  margin-bottom: 25px;
+
+  font-size: 58px;
+}
+
+.questions__subtitle {
+  display: block;
+  margin-bottom: 25px;
+
+  font-size: 29px;
+}
+
+.questions__text {
+  margin-bottom: 35px;
+
+  font-size: 29px;
+}

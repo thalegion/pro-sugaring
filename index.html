@@ -3,133 +3,402 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Седона</title>
+    <title>Pro Sugaring</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body class="page">
+    <div class="container">
+      <header class="page-header">
+        <div class="page-header__wrapper">
+          <div class="page-header__line">
+            <div class="logo page-header__logo">
+              <a class="logo__link" href="/">
+                <img class="logo__image" src="" width="295" height="90" alt="Логотип">
+              </a>
+            </div>
 
-    <header class="page-header">
-      <nav class="menu">
-        <button class="menu__close">Закрыть меню</button>
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link menu__link--first button" href="/">
-              Главная
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link button" href="/photo.html">
-              Фото и видео
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link button" href="/form.html">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link menu__link--last button" href="https://htmlacademy.ru" target="_blank">
-              Html academy
-            </a>
-          </li>
-        </ul>
-      </nav>
+            <div class="socials">
+              <ul class="socials__list">
+                <li class="socials__item">
+                  <a class="socials__link socials__link--google" href="">Мы в Google Plus</a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link socials__link--vkontakte" href="">Мы во Вконтакте</a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link socials__link--instagram" href="">Мы в Instagram</a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link socials__link--youtube" href="">Мы в Youtube</a>
+                </li>
+              </ul>
+            </div>
 
-      <div class="logo page-header__logo">
-        <div class="logo__filler"></div>
-        <a class="logo__link">
-          <img class="logo__image" src="../img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип">
-        </a>
-        <button class="page-header__menu-toggle">Открыть меню</button>
-      </div>
-
-      <div class="page-header__introduction page-header__introduction--main">
-        <img class="page-header__image" src="../img/text-sedona-index.svg" width="280" height="215" alt="Седона">
-      </div>
-    </header>
-
-    <main class="page-main">
-      <h1 class="page__title">Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
-      <p class="page__subtitle page__subtitle--small">Рассмотрим 5 причин, по которым седона круче чем гранд каньон!</p>
-
-      <section class="reasons">
-        <h2 class="hidden">Причины</h2>
-
-        <div class="reasons__list">
-          <div class="reasons__item">
-            <p class="reasons__title">Настоящий городок</p>
-            <p class="reasons__number">№1</p>
-            <p class="reasons__subtitle">Седона не аттракцион для туристов, там течет своя жизнь</p>
-            <img class="reasons__image" src="../img/main-city-mobile@1x.jpg" width="320" height="260" alt="Туристический городок">
-            <ul class="reasons__description-list">
-              <li class="reasons__description-item reasons__description-item--house">
-                <p class="reasons__description-title">Жильё</p>
-                <p class="reasons__description-subtitle">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-              </li>
-              <li class="reasons__description-item reasons__description-item--gift">
-                <p class="reasons__description-title">Сувениры</p>
-                <p class="reasons__description-subtitle">Не только китайского, но и местного производства!</p>
-              </li>
-              <li class="reasons__description-item reasons__description-item--food">
-                <p class="reasons__description-title">Еда</p>
-                <p class="reasons__description-subtitle">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-              </li>
-            </ul>
+            <div class="search">
+              <form class="search__form">
+                <input class="search__input" type="text" name="search">
+                <button class="search__submit">Поиск</button>
+              </form>
+            </div>
           </div>
-          <div class="reasons__item">
-            <p class="reasons__title">Там есть мост дьявола</p>
-            <p class="reasons__number">№2</p>
-            <p class="reasons__subtitle">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <img class="reasons__image" src="../img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола">
-          </div>
-          <div class="reasons__item reasons__item--small">
-            <p class="reasons__title">Небольшая площадь</p>
-            <p class="reasons__number">№3</p>
-            <p class="reasons__subtitle">Все интересные места находятся очень близко</p>
-          </div>
-          <div class="reasons__item reasons__item--small">
-            <p class="reasons__title">Красивая дорога</p>
-            <p class="reasons__number">№4</p>
-            <p class="reasons__subtitle">Ехать в седону из лас-вегаса совсем не скучно!</p>
-          </div>
-          <div class="reasons__item reasons__item--small">
-            <p class="reasons__title">Мало туристов</p>
-            <p class="reasons__number">№5</p>
-            <p class="reasons__subtitle">Большинство едет в гранд каньон и толпится там</p>
+
+          <div class="page-header__line">
+            <div class="contacts page-header__contacts">
+              <p class="contacts__title">Минск</p>
+              <a class="contacts__phone" href="tel:+375291942841">+375291942841</a>
+            </div>
           </div>
         </div>
-      </section>
 
-      <section class="map">
-        <h2 class="page__title page__title--small">Заинтересовались?</h2>
-        <p class="page__subtitle">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Каталог товаров</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Доставка</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <a class="cart menu__cart" href="#">
+            <p class="cart__text">Корзина</p>
+            <p class="cart__text">
+              0.00BYN
+            </p>
+          </a>
+        </nav>
+      </header>
 
-        <a class="button map__button" href="/form.html">Найти гостиницу</a>
+      <main class="page-main">
+        <h1 class="hidden">Pro sugaring</h1>
 
-        <img class="map__frame" src="../img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта">
-      </section>
-    </main>
+        <section class="catalog clearfix">
+          <h2 class="hidden">Товары</h2>
 
-    <footer class="page-footer">
-      <div class="socials">
-        <h2 class="page__title socials__title">#Visitsedona</h2>
-        <ul class="socials__list">
-          <li class="socials__item">
-            <a class="socials__link socials__link--twitter" href="https://twitter.com/">Мы в twitter</a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--facebook" href="https://facebook.com/">Мы в facebook</a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--youtube" href="https://youtube.com/">Мы в youtube</a>
-          </li>
-        </ul>
-      </div>
+          <div class="catalog__wrapper">
+            <div class="brands catalog__brands">
+              <ul class="brands__list">
+                <li class="brands__item">
+                  <a class="brands__link" href="#">
+                    <img class="brands__image" src="../img/apelsin-sugar-logo-wh.png" alt="ApelsinSugar">
+                  </a>
+                </li>
+                <li class="brands__item">
+                  <a class="brands__link" href="#">
+                    <img class="brands__image" src="../img/sliva.png" alt="Sliva">
+                  </a>
+                </li>
+                <li class="brands__item">
+                  <a class="brands__link" href="#">
+                    <img class="brands__image" src="../img/logo.png" alt="Maris">
+                  </a>
+                </li>
+                <li class="brands__item">
+                  <a class="brands__link" href="#">
+                    <img class="brands__image" src="../img/fCF9BO7Ca_Q.png" alt="Oasis">
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-      <div class="copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/">Разработано</a>
-      </div>
-    </footer>
+            <div class="products catalog__products">
+              <div class="swiper-container products__swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="products__item">
+                      <img class="products__image" src="../img/product.jpg" alt="Продукт">
+                      <div class="products__controls">
+                        <div class="products__counter">
+                          <input class="products__input" type="text" value="1" readonly>
+                        </div>
+                        <button class="products__submit">Добавить в корзину</button>
+                      </div>
+                      <p class="products__title">Сахарная паста ApelsinSugar Плотная. 750 г</p>
+                      <p class="products__price">25BYN</p>
+                      <a class="products__more-link" href="#">подробнее</a>
+                    </div>
+                  </div>
 
+                  <div class="swiper-slide">
+                    <div class="products__item">
+                      <img class="products__image" src="../img/product.jpg" alt="Продукт">
+                      <div class="products__controls">
+                        <div class="products__counter">
+                          <input class="products__input" type="text" value="1" readonly>
+                        </div>
+                        <button class="products__submit">Добавить в корзину</button>
+                      </div>
+                      <p class="products__title">Сахарная паста ApelsinSugar Плотная. 750 г</p>
+                      <p class="products__price">25BYN</p>
+                      <a class="products__more-link" href="#">подробнее</a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="products__item">
+                      <img class="products__image" src="../img/product.jpg" alt="Продукт">
+                      <div class="products__controls">
+                        <div class="products__counter">
+                          <input class="products__input" type="text" value="1" readonly>
+                        </div>
+                        <button class="products__submit">Добавить в корзину</button>
+                      </div>
+                      <p class="products__title">Сахарная паста ApelsinSugar Плотная. 750 г</p>
+                      <p class="products__price">25BYN</p>
+                      <a class="products__more-link" href="#">подробнее</a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="products__item">
+                      <img class="products__image" src="../img/product.jpg" alt="Продукт">
+                      <div class="products__controls">
+                        <div class="products__counter">
+                          <input class="products__input" type="text" value="1" readonly>
+                        </div>
+                        <button class="products__submit">Добавить в корзину</button>
+                      </div>
+                      <p class="products__title">Сахарная паста ApelsinSugar Плотная. 750 г</p>
+                      <p class="products__price">25BYN</p>
+                      <a class="products__more-link" href="#">подробнее</a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="products__item">
+                      <img class="products__image" src="../img/product.jpg" alt="Продукт">
+                      <div class="products__controls">
+                        <div class="products__counter">
+                          <input class="products__input" type="text" value="1" readonly>
+                        </div>
+                        <button class="products__submit">Добавить в корзину</button>
+                      </div>
+                      <p class="products__title">Сахарная паста ApelsinSugar Плотная. 750 г</p>
+                      <p class="products__price">25BYN</p>
+                      <a class="products__more-link" href="#">подробнее</a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="products__item">
+                      <img class="products__image" src="../img/product.jpg" alt="Продукт">
+                      <div class="products__controls">
+                        <div class="products__counter">
+                          <input class="products__input" type="text" value="1" readonly>
+                        </div>
+                        <button class="products__submit">Добавить в корзину</button>
+                      </div>
+                      <p class="products__title">Сахарная паста ApelsinSugar Плотная. 750 г</p>
+                      <p class="products__price">25BYN</p>
+                      <a class="products__more-link" href="#">подробнее</a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="products__item">
+                      <img class="products__image" src="../img/product.jpg" alt="Продукт">
+                      <div class="products__controls">
+                        <div class="products__counter">
+                          <input class="products__input" type="text" value="1" readonly>
+                        </div>
+                        <button class="products__submit">Добавить в корзину</button>
+                      </div>
+                      <p class="products__title">Сахарная паста ApelsinSugar Плотная. 750 г</p>
+                      <p class="products__price">25BYN</p>
+                      <a class="products__more-link" href="#">подробнее</a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="products__item">
+                      <img class="products__image" src="../img/product.jpg" alt="Продукт">
+                      <div class="products__controls">
+                        <div class="products__counter">
+                          <input class="products__input" type="text" value="1" readonly>
+                        </div>
+                        <button class="products__submit">Добавить в корзину</button>
+                      </div>
+                      <p class="products__title">Сахарная паста ApelsinSugar Плотная. 750 г</p>
+                      <p class="products__price">25BYN</p>
+                      <a class="products__more-link" href="#">подробнее</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-button-prev products__swiper-prev"></div>
+                <div class="swiper-pagination products__swiper-pagination"></div>
+                <div class="swiper-button-next products__swiper-next"></div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="ordering-info">
+          <h2 class="hidden">Как заказать?</h2>
+
+          <div class="ordering-info__wrapper">
+            <ul class="ordering-info__list">
+              <li class="ordering-info__item ordering-info__item--clock">
+                По телефону - ежедневно с 9.00 до 18.00 кроме субботы, воскресенья
+              </li>
+              <li class="ordering-info__item ordering-info__item--cart">
+                Через корзину на сайте - круглосуточно, без выходных
+              </li>
+              <li class="ordering-info__item ordering-info__item--mail">
+                Через электронную почту - круглосуточно, без выходных
+              </li>
+            </ul>
+            <p class="ordering-info__text">
+              При оформлении заказа через сайт, с Вами свяжется менеджер для уточнения.<br> Заказы, поступившие в выходные дни, обрабатываются на следующий рабочий день.
+            </p>
+          </div>
+        </section>
+
+        <section class="advantages">
+          <h2 class="hidden">Преимущества</h2>
+
+          <div class="advantages__wrapper">
+            <ul class="advantages__list">
+              <li class="advantages__item advantages__item--stats">
+                Pro-sugaring.by - это магазин профессиональных средств для сахарной депиляции.
+              </li>
+              <li class="advantages__item advantages__item--award">
+                Официальный дистрибьютор в Республике Беларусь
+              </li>
+              <li class="advantages__item advantages__item--notepad">
+                В нашем каталоге Вы найдете все необходимые материалы для проведения Шугаринга.
+              </li>
+              <li class="advantages__item advantages__item--certify">
+                Продукция сертифицирована, предназначена как для косметологов, так и для обычного использования дома.
+              </li>
+            </ul>
+
+            <p class="advantages__text">Специальные предложения для мастеров и салонов красоты!</p>
+            <p class="advantages__text">Позвонив нам, Вы сможете получить квалифицированные советы по выбору продукции, комплектации первоначального набора для проведения процедур.</p>
+          </div>
+        </section>
+
+        <section class="banners">
+          <h2 class="hidden">Интересное</h2>
+
+          <div class="banners__wrapper">
+            <div class="swiper-container banners__swiper">
+
+                <div class="swiper-wrapper banners__swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a class="banners__link" href="#">
+                        <img class="banners__image" src="../img/image.jpg" alt="Баннер 1">
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a class="banners__link" href="#">
+                        <img class="banners__image" src="../img/banner1.jpg" alt="Баннер 2">
+                      </a>
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev banners__prev"></div>
+                <div class="swiper-button-next banners__next"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="questions">
+          <div class="questions__wrapper">
+            <h2 class="questions__title">Возникли вопросы?</h2>
+
+            <p class="questions__subtitle">Задайте их нашим специалистам и получите оперативный ответ</p>
+
+            <a class="questions__subtitle" href="tel:+375291234567">+375 29 123 45 67</a>
+
+            <p class="questions__text">Так же следите за обновлениями в социальных сетях</p>
+
+            <div class="socials">
+              <ul class="socials__list">
+                <li class="socials__item">
+                  <a class="socials__link socials__link--google" href="">Мы в Google Plus</a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link socials__link--vkontakte" href="">Мы во Вконтакте</a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link socials__link--instagram" href="">Мы в Instagram</a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link socials__link--youtube" href="">Мы в Youtube</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <nav class="menu page-footer__menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Каталог товаров</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Доставка</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="contacts page-footer__contacts">
+              <p class="contacts__title">Минск</p>
+              <a class="contacts__phone" href="tel:+375291942841">+375291942841</a>
+            </div>
+        </nav>
+
+        <div class="logo page-footer__logo">
+          <a class="logo__link" href="/">
+            <img class="logo__image" src="../img/site-logo.png" width="295" height="90" alt="Логотип">
+          </a>
+        </div>
+
+        <p class="copyright">2017 © Интернет магазин профессиональной косметики для шугаринга.</p>
+      </footer>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        var banners_swiper = new Swiper ('.banners__swiper', {
+          nextButton: '.banners__swiper .swiper-button-next',
+          prevButton: '.banners__swiper .swiper-button-prev',
+          autoHeight: true,
+          spaceBetween: 42
+        })
+        var products_swiper = new Swiper ('.products__swiper', {
+          nextButton: '.products__swiper .swiper-button-next',
+          prevButton: '.products__swiper .swiper-button-prev',
+          pagination: '.products__swiper .swiper-pagination',
+          slidesPerColumn: 2,
+          slidesPerView: 2,
+          paginationClickable: true
+        })
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,65 @@
+.ordering-info {
+  padding: 65px 0 50px;
+
+  font-family: $font--times;
+  line-height: 29px;
+  text-align: center;
+
+  background-color: #f9e5e2;
+}
+
+.ordering-info__wrapper {
+  margin: 0 20px;
+}
+
+.ordering-info__list {
+  padding-left: 45%;
+
+  font-size: 29px;
+
+  background-image: url("../img/car.png");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.ordering-info__item {
+  position: relative;
+
+  padding-left: 65px;
+  margin-bottom: 70px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+.ordering-info__item--clock::before {
+  background-image: url("../img/icon-card.png");
+}
+
+.ordering-info__item--cart::before {
+  background-image: url("../img/icon-cart.png");
+}
+
+.ordering-info__item--mail::before {
+  background-image: url("../img/icon-clock.png");
+}
+
+.ordering-info__text {
+  font-size: 21px;
+}
