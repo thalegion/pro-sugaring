@@ -1,10 +1,13 @@
 @font-face {
   font-family: "Trajan";
-  src: url("../fonts/Trajan Pro 3 Regular.otf");
+  src: url("../fonts/Trajan Pro 3 Regular.otf") format("opentype");
 }
 
 $font--centrury-gothic: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 $font--centrury-schoolbook: "Century Schoolbook", CenturySchoolbook, sans-serif;
 $font--arial: Arial, "Helvetica Neue", Helvetica, sans-serif;
 $font--times: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
-$font--trajan: 'Trajan', serif;
+$font--trajan: "Trajan", Georgia, serif;
+
+$tablet-width: 1199px;
+$mobile-width: 767px;

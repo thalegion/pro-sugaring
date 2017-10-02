@@ -11,7 +11,7 @@
   margin: auto;
   margin-bottom: 5px;
 
-  box-shadow: 0px 0px 10px 0px #fff;
+  box-shadow: 0px 0px 15px 0px #ffffff;
 }
 
 .products__controls {
@@ -122,8 +122,18 @@
   }
 }
 
+.products__swiper {
+  text-align: center;
+}
+
 .products__swiper-pagination {
   position: static;
+
+  display: inline-block;
+  width: auto !important;
+  margin: 30px 0;
+
+  vertical-align: sub;
 
   counter-reset: pagination;
 }
@@ -154,5 +164,39 @@
     font-family: $font--centrury-schoolbook;
     font-size: 21px;
     line-height: 45px;
+  }
+}
+
+
+.products__swiper-prev {
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+
+  vertical-align: super;
+
+  cursor: pointer;
+  background-image: url("../img/p_prev.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.products__swiper-next {
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+
+  vertical-align: super;
+
+  cursor: pointer;
+  background-image: url("../img/p_next.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+@media (max-width: $tablet-width) {
+  .products__item {
+    padding: 0 30px;
   }
 }

@@ -63,3 +63,28 @@
 .ordering-info__text {
   font-size: 21px;
 }
+
+
+@media (max-width: $tablet-width) {
+  .ordering-info__list {
+    padding-left: 0;
+    padding-top: 25%;
+    background-position: top;
+  }
+
+  .ordering-info__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .ordering-info__list {
+    padding-top: 0;
+
+    font-size: 21px;
+    line-height: 26px;
+
+    background-image: none;
+
+  }
+}

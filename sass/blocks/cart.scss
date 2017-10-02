@@ -1,0 +1,14 @@
+.cart {
+  padding-left: 35px;
+
+  color: #333333;
+  background-image: url("../img/cart.png");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+@media (max-width: $mobile-width) {
+  .cart {
+    margin-top: 20px;
+  }
+}

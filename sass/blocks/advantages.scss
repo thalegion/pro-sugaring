@@ -90,3 +90,16 @@
     margin-bottom: 0;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .advantages {
+    padding-left: 0;
+    background-image: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .advantages {
+    padding-bottom: 50px;
+  }
+}

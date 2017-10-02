@@ -52,3 +52,21 @@
 
   font-size: 29px;
 }
+
+@media (max-width: $tablet-width) {
+  .questions {
+    padding: 55px 40% 10px 20px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .questions {
+    padding: 55px 20px 10px;
+
+    background-image: none;
+  }
+
+  .questions__wrapper {
+    margin: 0;
+  }
+}

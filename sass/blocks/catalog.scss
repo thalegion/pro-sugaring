@@ -17,3 +17,13 @@
   width: 75%;
   float: left;
 }
+
+@media (max-width: $mobile-width) {
+  .catalog__brands {
+    display: none;
+  }
+
+  .catalog__products {
+    width: 100%;
+  }
+}

@@ -1,0 +1,46 @@
+.product-modal {
+  padding: 20px 25px;
+  max-height: 90vh;
+  overflow-y: auto;
+
+  font-family: $font--arial;
+
+  background-color: #f9e5e2;
+  border-radius: 15px;
+  box-shadow: 0px 21px 21px 0px rgba(1, 1, 1, 0.5);
+}
+
+.product-modal__title {
+  font-size: 27px;
+  font-weight: 500;
+
+  margin-bottom: 20px;
+
+  &--small {
+    margin-bottom: 5px;
+  }
+}
+
+.product-modal__image {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+
+  box-shadow: 0px 0px 15px 0px #ffffff;
+}
+
+.product-modal__param {
+  font-size: 19px;
+
+  color: #606864;
+}
+
+.product-modal__content {
+  clear: both;
+}
+
+.product-modal__text {
+  font-size: 19px;
+
+  color: #606864;
+}

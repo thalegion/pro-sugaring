@@ -12,13 +12,8 @@
       <header class="page-header">
         <div class="page-header__wrapper">
           <div class="page-header__line">
-            <div class="logo page-header__logo">
-              <a class="logo__link" href="/">
-                <img class="logo__image" src="" width="295" height="90" alt="Логотип">
-              </a>
-            </div>
 
-            <div class="socials">
+            <div class="socials page-header__socials">
               <ul class="socials__list">
                 <li class="socials__item">
                   <a class="socials__link socials__link--google" href="">Мы в Google Plus</a>
@@ -35,9 +30,16 @@
               </ul>
             </div>
 
-            <div class="search">
+
+            <div class="logo page-header__logo">
+              <a class="logo__link" href="/">
+                <img class="logo__image" src="../img/site-logo.png" width="275" height="90" alt="Логотип">
+              </a>
+            </div>
+
+            <div class="search page-header__search">
               <form class="search__form">
-                <input class="search__input" type="text" name="search">
+                <input class="search__input" type="text" name="search" placeholder="поиск...">
                 <button class="search__submit">Поиск</button>
               </form>
             </div>
@@ -46,27 +48,27 @@
           <div class="page-header__line">
             <div class="contacts page-header__contacts">
               <p class="contacts__title">Минск</p>
-              <a class="contacts__phone" href="tel:+375291942841">+375291942841</a>
+              <a class="contacts__phone page-header__phone" href="tel:+375291942841">+375291942841</a>
             </div>
           </div>
         </div>
 
-        <nav class="menu">
-          <ul class="menu__list">
+        <nav class="menu page-header__menu">
+          <ul class="menu__list page-header__menu-list">
             <li class="menu__item">
-              <a class="menu__link" href="#">Каталог товаров</a>
+              <a class="menu__link page-header__menu-link" href="#">Каталог товаров</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Доставка</a>
+              <a class="menu__link page-header__menu-link" href="#">Доставка</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">О нас</a>
+              <a class="menu__link page-header__menu-link" href="#">О нас</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Отзывы</a>
+              <a class="menu__link page-header__menu-link" href="#">Отзывы</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Контакты</a>
+              <a class="menu__link page-header__menu-link" href="#">Контакты</a>
             </li>
           </ul>
           <a class="cart menu__cart" href="#">
@@ -76,6 +78,11 @@
             </p>
           </a>
         </nav>
+        <button class="page-header__menu-toggle">
+          <svg class="page-header__menu-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+            <use href="../img/menu.svg#icon-menu"></use>
+          </svg>
+        </button>
       </header>
 
       <main class="page-main">
@@ -234,9 +241,9 @@
                   </div>
                 </div>
 
-                <div class="swiper-button-prev products__swiper-prev"></div>
+                <div class="products__swiper-prev"></div>
                 <div class="swiper-pagination products__swiper-pagination"></div>
-                <div class="swiper-button-next products__swiper-next"></div>
+                <div class="products__swiper-next"></div>
 
               </div>
             </div>
@@ -370,12 +377,124 @@
 
         <div class="logo page-footer__logo">
           <a class="logo__link" href="/">
-            <img class="logo__image" src="../img/site-logo.png" width="295" height="90" alt="Логотип">
+            <img class="logo__image page-footer__logo-image" src="../img/site-logo.png" width="295" height="90" alt="Логотип">
           </a>
         </div>
 
         <p class="copyright">2017 © Интернет магазин профессиональной косметики для шугаринга.</p>
       </footer>
+    </div>
+
+    <div class="modal">
+      <div class="modal__body product-modal">
+        <p class="product-modal__title">Сахарная паста ApelsinSugar. Плотная. 750г</p>
+        <div class="product-modal__params">
+          <img class="product-modal__image" src="../img/product.jpg" alt="Товар" width="225" height="225">
+          <p class="product-modal__param">Плотность: плотная</p>
+          <p class="product-modal__param">Объем: 750 г</p>
+          <p class="product-modal__param">Цена: 25BYN.</p>
+          <p class="product-modal__param">Сахарная паста для шугаринга плотной консистенциипредназначена для удаления жестких коротких волос.</p>
+          <p class="product-modal__param">Подходит для мануальной техники.</p>
+          <p class="product-modal__param">Состав: фруктоза, глюкоза, вода, лимонная кислота.</p>
+        </div>
+        <div class="product-modal__content">
+          <p class="product-modal__title product-modal__title--small">Описание товара</p>
+          <p class="product-modal__text">Применяется для удаления жестких забритых волос.
+            Подходит для мануальной и смешанной техник.
+            Благодаря только натуральным ингредиентам, паста не
+            вызывает аллергии и раздражения. Удаляя только
+            омертвевшие роговые чешуйки и волосы, сохраняет живые
+            клетки кожи. Эффект после процедуры сохраняется 3 – 4
+            недели.
+            Способ применения: не требует предварительного
+            разогрева. Шпателем взять пасту размером с грецкий орех и
+            провести процедуру депиляции.
+            Противопоказания к депиляции: Сахарный диабет. Любое
+            вирусное заболевание, находящееся в острой стадии: грипп,
+            герпес и другие. Болезни кожи, такие как фурункулёз,
+            псориаз или экзема, также являются предостережением для
+            проведения депиляции. Механические повреждения кожи —
+            ссадины, порезы, царапины, а также аллергические
+            высыпания или крапивница неизвестного происхождения.
+            Доброкачественные и злокачественные новообразования на
+            коже. Индивидуально в период беременности.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal--large">
+      <div class="modal__body cart-modal">
+        <div class="cart-modal__table">
+          <div class="cart-modal__row">
+            <div class="cart-modal__head-cell"></div>
+            <div class="cart-modal__head-cell">Товар</div>
+            <div class="cart-modal__head-cell">Цена</div>
+            <div class="cart-modal__head-cell">Кол-во</div>
+            <div class="cart-modal__head-cell">Итого</div>
+          </div>
+          <div class="cart-modal__row">
+            <div class="cart-modal__cell">
+              <a class="cart-modal__delete-link" href="del">x</a>
+            </div>
+            <div class="cart-modal__cell">
+              <img class="cart-modal__image" src="../img/product.jpg" alt="Товар" width="100" height="100">
+              Сахарная паста ApelsinSugar. Плотная. 750г
+            </div>
+            <div class="cart-modal__cell">
+              25BYN
+            </div>
+            <div class="cart-modal__cell">
+              <div class="cart-modal__counter">
+                <input class="cart-modal__counter-input" type="text" value="1" readonly>
+              </div>
+            </div>
+            <div class="cart-modal__cell">
+              25BYN
+            </div>
+          </div>
+          <div class="cart-modal__row">
+            <div class="cart-modal__cell">
+              <a class="cart-modal__delete-link" href="del">x</a>
+            </div>
+            <div class="cart-modal__cell">
+              <img class="cart-modal__image" src="../img/product.jpg" alt="Товар" width="100" height="100">
+              Сахарная паста ApelsinSugar. Плотная. 750г
+            </div>
+            <div class="cart-modal__cell">
+              25BYN
+            </div>
+            <div class="cart-modal__cell">
+              <div class="cart-modal__counter">
+                <input class="cart-modal__counter-input" type="text" value="1" readonly>
+              </div>
+            </div>
+            <div class="cart-modal__cell">
+              25BYN
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-modal__controls">
+          <a class="cart-modal__link cart-modal__link--small" href="#">Обновить корзину</a>
+        </div>
+
+        <div class="cart-modal__wrapper">
+          <div class="cart-modal__info">
+            <p class="cart-modal__title">Сумма в корзине</p>
+
+            <p class="cart-modal__total"><span class="cart-modal__total-key">Подытог</span> <span class="cart-modal__total-value">25BYN</span></p>
+            <p class="cart-modal__total"><span class="cart-modal__total-key">Доставка</span> <span class="cart-modal__total-value">Стоимость доставки будет рассчитана как только вы предоставите свой адрес.</span></p>
+            <p class="cart-modal__total"><span class="cart-modal__total-key">Итого</span> <span class="cart-modal__total-value">25BYN</span></p>
+
+            <a class="cart-modal__link" href="#">Перейти к оформлению</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal--large">
+      <div class="modal__body"></div>
     </div>
 
 
@@ -389,15 +508,30 @@
           prevButton: '.banners__swiper .swiper-button-prev',
           autoHeight: true,
           spaceBetween: 42
-        })
+        });
         var products_swiper = new Swiper ('.products__swiper', {
-          nextButton: '.products__swiper .swiper-button-next',
-          prevButton: '.products__swiper .swiper-button-prev',
+          nextButton: '.products__swiper .products__swiper-next',
+          prevButton: '.products__swiper .products__swiper-prev',
           pagination: '.products__swiper .swiper-pagination',
           slidesPerColumn: 2,
           slidesPerView: 2,
-          paginationClickable: true
-        })
+          paginationClickable: true,
+          breakpoints: {
+            767: {
+              slidesPerView: 2
+            },
+            540: {
+              slidesPerView: 1
+            }
+          }
+        });
+
+        $('.page-header__menu-toggle').on('click', function(e) {
+          e.preventDefault();
+
+          $('.page-header__menu').toggleClass('page-header__menu--opened');
+          $('.page-header__menu-icon').toggleClass('page-header__menu-icon--active')
+        });
       });
     </script>
   </body>

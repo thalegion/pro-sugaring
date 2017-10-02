@@ -1,0 +1,33 @@
+.modal {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  z-index: 10;
+
+  display: none;
+  width: 610px;
+  overflow: hidden;
+
+  transform: translateX(-50%);
+
+  &--large {
+    width: 1000px;
+  }
+
+  &--opened {
+    display: block;
+  }
+
+}
+
+@media (max-width: $tablet-width) {
+  .modal--large {
+    width: 720px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .modal {
+    width: 90%;
+  }
+}

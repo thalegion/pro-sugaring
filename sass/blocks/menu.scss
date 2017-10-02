@@ -18,9 +18,6 @@
   font-size: 21px;
 }
 
-.menu__item {
-
-  &:hover {
-    text-decoration: underline;
-  }
+.menu__link:hover {
+  text-decoration: underline;
 }
