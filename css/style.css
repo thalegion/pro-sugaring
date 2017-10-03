@@ -946,6 +946,161 @@ img {
         -ms-flex-align: start;
             align-items: flex-start; } }
 
+.order-modal {
+  max-height: 90vh;
+  overflow: auto;
+  padding: 45px 30px;
+  border-radius: 3px;
+  border: 3px solid #d8e7ef;
+  background-color: #ffffff; }
+
+.order-modal__fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 55px; }
+
+.order-modal__fields-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.order-modal__input {
+  display: block;
+  height: 30px;
+  padding-left: 5px;
+  width: 100%;
+  margin-bottom: 25px;
+  border: 1px solid #000000;
+  border-radius: 1px; }
+
+.order-modal__textarea {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  min-height: 115px;
+  resize: none;
+  border: 1px solid #000000;
+  border-radius: 1px; }
+
+.order-modal__label {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+  font-size: 21px;
+  font-weight: 600; }
+  .order-modal__label--half {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%; }
+
+.order-modal__sup {
+  color: #ff0000; }
+
+.order-modal__info {
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+  font-size: 25px;
+  font-weight: 600; }
+
+.order-modal__title {
+  margin-bottom: 15px; }
+
+.order-modal__table {
+  display: table;
+  width: 100%;
+  margin-bottom: 30px;
+  border-collapse: collapse;
+  border: 1px solid #f9e5e2; }
+
+.order-modal__row {
+  display: table-row;
+  border-bottom: 1px solid #f9e5e2; }
+
+.order-modal__cell {
+  display: table-cell;
+  padding: 5px 10px; }
+  .order-modal__cell:first-child {
+    width: 65%; }
+  .order-modal__cell:last-child {
+    font-size: 21px; }
+
+.order-modal__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.order-modal__link {
+  display: inline-block;
+  padding: 15px 10px;
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+  text-transform: uppercase;
+  cursor: pointer; }
+
+.order-modal__link--continue {
+  font-size: 17px;
+  background-color: #d8e7ef; }
+  .order-modal__link--continue:hover {
+    background-color: #cbdae2; }
+
+.order-modal__link--order {
+  font-size: 21px;
+  font-weight: 600;
+  background-color: #75bf99; }
+  .order-modal__link--order:hover {
+    background-color: #62aa85; }
+
+@media (max-width: 767px) {
+  .order-modal__fields {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+  .order-modal__label {
+    font-size: 18px; }
+    .order-modal__label--half {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%; }
+  .order-modal__table {
+    display: block; }
+  .order-modal__row {
+    display: block; }
+  .order-modal__row:first-child .order-modal__cell:last-child {
+    display: none; }
+  .order-modal__cell {
+    display: block;
+    font-size: 21px; }
+    .order-modal__cell:last-child {
+      text-align: right; }
+  .order-modal__controls {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center; }
+  .order-modal__link--order {
+    margin-bottom: 20px; } }
+
 .page--modaled {
   height: 100vh;
   overflow: hidden; }

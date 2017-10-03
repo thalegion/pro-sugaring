@@ -493,8 +493,119 @@
       </div>
     </div>
 
-    <div class="modal modal--large">
-      <div class="modal__body"></div>
+    <div class="modal modal--large modal--opened">
+      <div class="modal__body order-modal">
+        <form class="order-modal__form">
+          <div class="order-modal__fields">
+            <div class="order-modal__fields-group">
+              <label class="order-modal__label order-modal__label--half">
+                Имя <sup class="order-modal__sup">*</sup>
+                <input class="order-modal__input" type="text" name="firstname">
+              </label>
+
+              <label class="order-modal__label order-modal__label--half">
+                Фамилия <sup class="order-modal__sup">*</sup>
+                <input class="order-modal__input" type="text" name="lastname">
+              </label>
+
+              <label class="order-modal__label">
+                Название компании
+                <input class="order-modal__input" type="text" name="company_name">
+              </label>
+
+              <label class="order-modal__label order-modal__label--half">
+                Email <sup class="order-modal__sup">*</sup>
+                <input class="order-modal__input" type="text" name="email">
+              </label>
+
+              <label class="order-modal__label order-modal__label--half">
+                Телефон <sup class="order-modal__sup">*</sup>
+                <input class="order-modal__input" type="text" name="phone">
+              </label>
+
+              <label class="order-modal__label">
+                Город <sup class="order-modal__sup">*</sup>
+                <input class="order-modal__input" type="text" name="city">
+              </label>
+
+              <label class="order-modal__label">
+                Адрес <sup class="order-modal__sup">*</sup>
+                <input class="order-modal__input" type="text" name="address1">
+                <input class="order-modal__input" type="text" name="address2">
+              </label>
+
+              <label class="order-modal__label order-modal__label--half">
+                Область/регион
+                <input class="order-modal__input" type="text" name="region">
+              </label>
+
+              <label class="order-modal__label order-modal__label--half">
+                Почтовый индекс
+                <input class="order-modal__input" type="text" name="zip">
+              </label>
+            </div>
+
+            <div class="order-modal__fields-group">
+              <label class="order-modal__label">
+                Примечание к заказу
+                <textarea class="order-modal__textarea"></textarea>
+              </label>
+            </div>
+          </div>
+
+          <div class="order-modal__info">
+            <p class="order-modal__title">Ваш заказ</p>
+
+            <div class="order-modal__table">
+              <div class="order-modal__row">
+                <div class="order-modal__cell">
+                  Товар
+                </div>
+                <div class="order-modal__cell">
+                  Итого
+                </div>
+              </div>
+              <div class="order-modal__row">
+                <div class="order-modal__cell">
+                  Сахарная паста ApelsinSugar. Плотная. 750 г × 1
+                </div>
+                <div class="order-modal__cell">
+                  25BYN
+                </div>
+              </div>
+              <div class="order-modal__row">
+                <div class="order-modal__cell">
+                  Подытог
+                </div>
+                <div class="order-modal__cell">
+                  25BYN
+                </div>
+              </div>
+              <div class="order-modal__row">
+                <div class="order-modal__cell">
+                  Доставка
+                </div>
+                <div class="order-modal__cell">
+                  Стоимость доставки будет рассчитана как только вы предоставите свой адрес.
+                </div>
+              </div>
+              <div class="order-modal__row">
+                <div class="order-modal__cell">
+                  Итого
+                </div>
+                <div class="order-modal__cell">
+                  25BYN
+                </div>
+              </div>
+            </div>
+
+            <div class="order-modal__controls">
+              <a class="order-modal__link order-modal__link--continue">Продолжить покупки</a>
+              <button class="order-modal__link order-modal__link--order">Подтвердить заказ</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
 
 
