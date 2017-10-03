@@ -63,10 +63,9 @@
   font-size: 25px;
   line-height: 20px;
   text-align: center;
+  user-select: none;
 
-  &::before {
-    content: "+";
-
+  & span {
     position: absolute;
     right: 0;
     top: 0;
@@ -80,9 +79,7 @@
     cursor: pointer;
   }
 
-  &::after {
-    content: "-";
-
+  & span + span {
     position: absolute;
     right: 0;
     top: 19px;
